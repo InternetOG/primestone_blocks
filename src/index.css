@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+    --text-fluid-md: clamp(1.000rem, calc(0.941rem + 0.294vw), 1.125rem); 
+    --text-fluid-sm: clamp(0.875rem, calc(0.816rem + 0.294vw), 1.000rem);
+    --breakpoint-smd: 850px;
+    --font-heading: "Montserrat", sans-serif;
+    --font-body: "Poppins", sans-serif;
+}
+
+:root {
+  font-family: "Poppins", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;
+}

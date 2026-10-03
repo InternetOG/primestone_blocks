@@ -1,0 +1,10 @@
+/* *, *::before, *::after {
+
+  box-sizing: border-box;
+  font-size: clamp(1.000rem, calc(0.941rem + 0.294vw), 1.125rem);
+
+} */
+
+* {
+    /* font-size: clamp(1.000rem, calc(0.941rem + 0.294vw), 1.125rem);   */
+}
