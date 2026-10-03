@@ -13,10 +13,12 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "swiper/css/autoplay";
+import worker from "../assets/hero_section/0.jpg";
+import walls from "../assets/hero_section/6.jpg";
 
 const heroSectionDetailsArr = [
   {
-    img: "./src/assets/hero_section/0.jpg",
+    img: worker,
     carouselID: 1,
     headingS1: "Built Strong",
     headingS2: "to Last Generations",
@@ -26,8 +28,8 @@ const heroSectionDetailsArr = [
     btn2: "Explore Products",
   },
   {
-    img: "./src/assets/hero_section/6.jpg",
-    carouselID: 1,
+    img: walls,
+    carouselID: 2,
     headingS1: "Laying Groundwork ",
     headingS2: "for Brighter Futures",
     paragraph:
