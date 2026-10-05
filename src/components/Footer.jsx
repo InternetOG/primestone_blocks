@@ -3,6 +3,11 @@ import { IoLogoInstagram } from "react-icons/io5";
 import { FaTiktok } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaFacebookF } from "react-icons/fa6";
+import { FaWhatsapp } from "react-icons/fa";
+import { Link } from "react-router";
+import { FaPhone } from "react-icons/fa6";
+import { MdEmail } from "react-icons/md";
+import { FaMobileAlt } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -25,48 +30,64 @@ const Footer = () => {
             </svg>
           </div> */}
 
-          <div className="mt-8 grid grid-cols-2 gap-8 lg:mt-0 lg:grid-cols-5 lg:gap-y-16">
-            <div className="col-span-2">
-              <div>
-                <h2 className="text-2xl font-bold text-white">
-                  Get the latest news!
-                </h2>
+          <div className="mt-8 grid grid-cols-4 max-smd:grid w-full gap-8 lg:mt-0">
+            <div className="col-span-5 mb-2">
+              <div className="grid w-full justify-between gap-8 md:flex border border-white/15 bg-white/4 p-6 ">
+                <div className="">
+                  <p className="font-['Montserrat'] text-2xl font-extrabold tracking-tight text-white sm:text-3xl">
+                    PRIMESTONE <span className="text-[#e87844]">BLOCKS</span>
+                  </p>
+                  <p className="mt-2 font-['Poppins'] text-sm text-[#e0e0da]">
+                    Building a solid future brick by brick
+                  </p>
+                </div>
 
-                <p className="mt-4 text-[#D5D5D5]">
-                  Subscribe to our Newsletter & Event right now to be updated.
-                </p>
+                <div className="">
+                  <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#e87844]">
+                    The PrimeStone newsletter
+                  </p>
+                  <h2 className="mt-2 font-['Montserrat'] text-2xl font-bold text-white sm:text-3xl">
+                    Good things are building.
+                  </h2>
+                  <p className="mt-2 max-w-xl text-sm leading-6 text-white/70">
+                    Get occasional product news, practical building updates, and
+                    a closer look at what is happening at PrimeStone.
+                  </p>
+
+                  <form className="mt-5 w-full">
+                    <label htmlFor="UserEmail" className="sr-only">
+                      Email address
+                    </label>
+                    <div className="flex flex-col gap-3 sm:flex-row sm:gap-0 sm:border sm:border-white/25 sm:bg-[#030f27] sm:p-1.5">
+                      <input
+                        type="email"
+                        id="UserEmail"
+                        placeholder="Enter your email address"
+                        autoComplete="email"
+                        className="min-h-12 w-full border border-white/25 bg-[#030f27] px-4 text-sm text-white placeholder:text-white/45 focus:border-[#e87844] focus:outline-none sm:border-0 sm:bg-transparent"
+                      />
+                      <button
+                        type="submit"
+                        className="inline-flex min-h-12 shrink-0 items-center justify-center bg-[#e87844] px-6 text-sm font-bold text-white transition-colors hover:bg-[#c96537] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#e87844]"
+                      >
+                        Subscribe{" "}
+                        <span className="ml-3" aria-hidden="true">
+                          &rarr;
+                        </span>
+                      </button>
+                    </div>
+                  </form>
+                </div>
               </div>
             </div>
 
-            <div className="col-span-2 lg:col-span-3 lg:flex lg:items-end">
-              <form className="w-full">
-                <label for="UserEmail" className="sr-only">
-                  {" "}
-                  Email{" "}
-                </label>
-
-                <div className="border border-white p-2  sm:flex sm:items-center sm:gap-4">
-                  <input
-                    type="email"
-                    id="UserEmail"
-                    placeholder="john@rhcp.com"
-                    className="w-full border-none focus:border-transparent sm:text-sm"
-                  />
-
-                  <button className="mt-1 w-full bg-teal-500 px-6 py-3 text-sm font-bold tracking-wide text-white uppercase transition-none hover:bg-white sm:mt-0 sm:w-auto sm:shrink-0">
-                    Sign Up
-                  </button>
-                </div>
-              </form>
-            </div>
-
-            <div className="col-span-2 sm:col-span-1">
-              <p className="font-medium text-white">Services</p>
+            <div className=" max-smd:col-span-2 w-full">
+              <p className="font-medium text-white">Products</p>
 
               <ul className="mt-6 space-y-4 text-sm">
                 <li>
                   <a
-                    href="#"
+                    href="#products"
                     className="text-[#D5D5D5] transition hover:opacity-75"
                   >
                     {" "}
@@ -76,7 +97,7 @@ const Footer = () => {
 
                 <li>
                   <a
-                    href="#"
+                    href="#products"
                     className="text-[#D5D5D5] transition hover:opacity-75"
                   >
                     {" "}
@@ -86,14 +107,14 @@ const Footer = () => {
               </ul>
             </div>
 
-            <div className="col-span-2 sm:col-span-1">
+            <div className="max-smd:col-span-2 w-full">
               <p className="font-medium text-white">Company</p>
 
               <ul className="mt-6 space-y-4 text-sm">
                 <li>
                   <a
                     href="#"
-                    className="text-white transition hover:opacity-75"
+                    className="text-[#D5D5D5] transition hover:opacity-75"
                   >
                     {" "}
                     About{" "}
@@ -101,51 +122,62 @@ const Footer = () => {
                 </li>
 
                 <li>
-                  <a
-                    href="#"
-                    className="text-white transition hover:opacity-75"
+                  <Link
+                    to="/#meet-the-team"
+                    className="text-[#D5D5D5] transition hover:opacity-75"
                   >
                     {" "}
                     Meet the Team{" "}
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
 
-            <div className="col-span-2 sm:col-span-1">
-              <p className="font-medium text-white">Helpful Links</p>
+            <div className="max-smd:col-span-2 w-full">
+              <p className="font-medium text-white">Contact Information</p>
 
               <ul className="mt-6 space-y-4 text-sm">
                 <li>
                   <a
-                    href="#"
-                    className="text-white transition hover:opacity-75"
+                    href="tel:+234 815 354 4441"
+                    className="flex items-center text-[#D5D5D5] transition hover:opacity-75"
                   >
                     {" "}
-                    Contact{" "}
+                    <FaPhone className="text-[#FD5D14] mr-2" />
+                    <span className="text-[#D5D5D5]">(+234) 815 354 4441</span>
                   </a>
                 </li>
 
                 <li>
                   <a
-                    href="#"
-                    className="text-white transition hover:opacity-75"
+                    href="tel:+234 912 815 9045"
+                    className="flex items-center text-[#D5D5D5] transition hover:opacity-75"
                   >
-                    {" "}
-                    FAQs{" "}
+                    <FaMobileAlt className="text-[#FD5D14] mr-2" />
+                    <span className="text-[#D5D5D5]">(+234) 912 815 9045</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="mailto:primestoneblocks@gmail.com"
+                    className="flex items-center text-[#D5D5D5] transition hover:opacity-75"
+                  >
+                    <MdEmail className="text-[#FD5D14] mr-2" />
+                    <span>primestoneblocks</span>
                   </a>
                 </li>
               </ul>
             </div>
 
-            <div className="col-span-2 sm:col-span-1">
+            <div className="max-smd:col-span-2 w-full">
               <p className="font-medium text-white">Legal</p>
 
               <ul className="mt-6 space-y-4 text-sm">
                 <li>
                   <a
                     href="#"
-                    className="text-white transition hover:opacity-75"
+                    className="text-[#D5D5D5] transition hover:opacity-75"
                   >
                     {" "}
                     Returns Policy{" "}
@@ -155,7 +187,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    className="text-white transition hover:opacity-75"
+                    className="text-[#D5D5D5] transition hover:opacity-75"
                   >
                     {" "}
                     Refund Policy{" "}
@@ -171,7 +203,10 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a className="no-underline" href="#">
+                <a
+                  className="no-underline"
+                  href="https://www.instagram.com/primestone_blocks_and_concrete/"
+                >
                   <IoLogoInstagram />
                 </a>
               </li>
@@ -183,6 +218,11 @@ const Footer = () => {
               <li>
                 <a className="no-underline" href="#">
                   <FaTiktok />
+                </a>
+              </li>
+              <li>
+                <a className="no-underline" href="#">
+                  <FaWhatsapp />
                 </a>
               </li>
             </ul>

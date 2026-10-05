@@ -15,6 +15,7 @@ import "swiper/css/scrollbar";
 import "swiper/css/autoplay";
 import worker from "../assets/hero_section/0.jpg";
 import walls from "../assets/hero_section/6.jpg";
+import { Link } from "react-router";
 
 const heroSectionDetailsArr = [
   {
@@ -71,10 +72,10 @@ const HeroSection = () => {
               </h1>
               <p className="hero-subtitle">{detail.paragraph}</p>
               <div className="hero-actions">
-                <a href="#contact" className="hero-cta primary">
+                <Link to="contact" className="hero-cta primary">
                   {detail.btn1}
-                </a>
-                <a href="#services" className="hero-cta secondary">
+                </Link>
+                <a href="#products" className="hero-cta secondary">
                   {detail.btn2}
                 </a>
               </div>

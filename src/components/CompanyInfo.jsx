@@ -25,7 +25,7 @@ const CompanyInfo = () => {
           </div>
           <p className="grid">
             <a
-              href="tel:+234 803 123 4567"
+              href="tel:+234 815 354 4441"
               className="font-extrabold leading-tight text-[#e0e0da] hover:text-[#FD5D14]"
             >
               (+234) 815 354 4441

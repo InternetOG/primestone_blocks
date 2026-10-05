@@ -6,6 +6,7 @@ import { IoLogoInstagram } from "react-icons/io5";
 import { FaTiktok } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaFacebookF } from "react-icons/fa6";
+import { FaWhatsapp } from "react-icons/fa";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -99,7 +100,7 @@ const Header = () => {
               </a>
             </li>
             <li>
-              <a className="no-underline" href="#">
+              <a className="no-underline" href="https://www.instagram.com/primestone_blocks_and_concrete/">
                 <IoLogoInstagram />
               </a>
             </li>
@@ -111,6 +112,11 @@ const Header = () => {
             <li>
               <a className="no-underline" href="#">
                 <FaTiktok />
+              </a>
+            </li>
+            <li>
+              <a className="no-underline" href="#">
+                <FaWhatsapp />
               </a>
             </li>
           </ul>
