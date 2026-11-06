@@ -32,7 +32,7 @@ const Footer = () => {
 
           <div className="mt-8 grid grid-cols-4 max-smd:grid w-full gap-8 lg:mt-0">
             <div className="col-span-5 mb-2">
-              <div className="grid w-full justify-between gap-8 md:flex border border-white/15 bg-white/4 p-6 ">
+              <div className="grid w-full justify-between gap-8 bg-white/4 p-6 shadow-xl shadow-black/20 md:flex">
                 <div className="">
                   <p className="font-['Montserrat'] text-2xl font-extrabold tracking-tight text-white sm:text-3xl">
                     PRIMESTONE <span className="text-[#e87844]">BLOCKS</span>
@@ -42,14 +42,14 @@ const Footer = () => {
                   </p>
                 </div>
 
-                <div className="">
-                  <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#e87844]">
+                <div className="bg-[#f5f0e8] p-6 text-[#030f27] shadow-xl shadow-black/20 sm:p-8">
+                  <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#a96548]">
                     The PrimeStone newsletter
                   </p>
-                  <h2 className="mt-2 font-['Montserrat'] text-2xl font-bold text-white sm:text-3xl">
+                  <h2 className="mt-2 font-['Montserrat'] text-2xl font-bold text-[#030f27] sm:text-3xl">
                     Good things are building.
                   </h2>
-                  <p className="mt-2 max-w-xl text-sm leading-6 text-white/70">
+                  <p className="mt-2 max-w-xl text-sm leading-6 text-[#59616b]">
                     Get occasional product news, practical building updates, and
                     a closer look at what is happening at PrimeStone.
                   </p>
@@ -58,13 +58,13 @@ const Footer = () => {
                     <label htmlFor="UserEmail" className="sr-only">
                       Email address
                     </label>
-                    <div className="flex flex-col gap-3 sm:flex-row sm:gap-0 sm:border sm:border-white/25 sm:bg-[#030f27] sm:p-1.5">
+                    <div className="flex flex-col gap-3 sm:flex-row sm:gap-0 sm:border sm:border-[#030f27]/15 sm:bg-white sm:p-1.5">
                       <input
                         type="email"
                         id="UserEmail"
                         placeholder="Enter your email address"
                         autoComplete="email"
-                        className="min-h-12 w-full border border-white/25 bg-[#030f27] px-4 text-sm text-white placeholder:text-white/45 focus:border-[#e87844] focus:outline-none sm:border-0 sm:bg-transparent"
+                        className="min-h-12 w-full border border-[#030f27]/20 bg-white px-4 text-sm text-[#030f27] placeholder:text-[#59616b]/70 focus:border-[#e87844] focus:outline-none sm:border-0 sm:bg-transparent"
                       />
                       <button
                         type="submit"

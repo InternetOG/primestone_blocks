@@ -12,6 +12,14 @@ const leaders = [
     imageAlt: "Portrait of Olasunkanmi Kufile",
   },
   {
+    name: "Mr. Bada",
+    title: "Operations & Logistics Manager",
+    description:
+      "Coordinates site deliveries, order scheduling, and customer support for seamless project execution.",
+    image: null,
+    imageAlt: "Portrait of Mr. Bada",
+  },
+  {
     name: "Omoleye Osadare",
     title: "Head of Production & Quality Control",
     description:
@@ -19,14 +27,6 @@ const leaders = [
     image: null,
     imageAlt: "Portrait of Omoleye Osadare",
   },
-  // {
-  //   name: "Amina Bello",
-  //   title: "Operations & Logistics Manager",
-  //   description:
-  //     "Coordinates site deliveries, order scheduling, and customer support for seamless project execution.",
-  //   image: null,
-  //   imageAlt: "Portrait of Amina Bello",
-  // },
 ];
 
 const TeamSection = () => {
